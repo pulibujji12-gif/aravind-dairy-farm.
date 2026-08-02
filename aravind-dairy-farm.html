@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#1A3A32" />
+<title>Aravind Dairy Farm — Fresh Dairy from Kamalapuram to Your Door</title>
+<meta name="description" content="Pure, farm-fresh dairy from Aravind Dairy Farm in Kamalapuram, Kadapa. Fresh milk, set curd, golden ghee, butter, paneer and artisan cheese — delivered to your home every morning. Schedule your farm-to-door subscription on WhatsApp." />
+<meta name="keywords" content="Aravind Dairy Farm, fresh milk Kamalapuram, dairy Kadapa, ghee, paneer, curd, butter, cheese, dairy delivery, farm fresh milk" />
+<meta name="author" content="Aravind Dairy Farm" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Aravind Dairy Farm — Fresh Dairy from Kamalapuram to Your Door" />
+<meta property="og:description" content="Pure, farm-fresh dairy from Kamalapuram, Kadapa. Fresh milk, set curd, golden ghee, butter, paneer and artisan cheese — delivered to your home every morning." />
+<meta property="og:site_name" content="Aravind Dairy Farm" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Aravind Dairy Farm — Fresh Dairy from Kamalapuram to Your Door" />
+<meta name="twitter:description" content="Pure, farm-fresh dairy from Kamalapuram, Kadapa — delivered to your home every morning." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  :root{
+    --green:#1A3A32; --green-dark:#112B25; --green-hover:#245347;
+    --gold:#D4AF37; --gold-light:#E7C95E; --gold-text:#9A791A; --gold-text-2:#8A6D18; --gold-text-3:#B08A16;
+    --cream:#F9F7F2; --panel:#E8EDEA;
+    --muted:#557169; --muted-2:#35574E; --muted-3:#789087;
+    --border:#CCD7D2; --border-2:#CBD6D1; --border-3:#D7DFDB; --border-4:#B9C8C2;
+  }
+  html{scroll-behavior:smooth;}
+  body{background:var(--cream); color:var(--green); font-family:'Manrope',sans-serif; font-size:16px;}
+  h1,h2,h3,.font-heading{font-family:'Fraunces',serif;}
+  .section-pad{padding:5rem 1.25rem;}
+  @media(min-width:768px){.section-pad{padding:7rem 2.5rem;}}
+  @media(min-width:1280px){.section-pad{padding:8rem 10vw;}}
+  .eyebrow{font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.22em; color:var(--gold-text);}
+  .section-title{margin-top:1.25rem; font-family:'Fraunces',serif; font-size:2.75rem; line-height:.98;}
+  @media(min-width:768px){.section-title{font-size:3.5rem;}}
+  .btn-primary{display:inline-flex; min-height:3rem; align-items:center; gap:.5rem; border-radius:9999px; background:var(--green); padding:.75rem 1.5rem; font-size:.875rem; font-weight:600; color:#fff; transition:.2s;}
+  .btn-primary:hover{transform:translateY(-2px); background:var(--green-hover);}
+  .btn-primary:disabled{opacity:.4; cursor:not-allowed; transform:none;}
+  .btn-secondary{display:inline-flex; min-height:3rem; align-items:center; gap:.5rem; border-radius:9999px; padding:.75rem 1rem; font-size:.875rem; font-weight:600; color:var(--green); background:transparent;}
+  .btn-secondary:disabled{opacity:.3; cursor:not-allowed;}
+  .btn-gold{display:inline-flex; min-height:3rem; align-items:center; gap:.5rem; border-radius:9999px; background:var(--gold); padding:.75rem 1.5rem; font-size:.875rem; font-weight:700; color:var(--green); transition:.2s;}
+  .btn-gold:hover{transform:translateY(-2px); background:var(--gold-light);}
+  .btn-light{display:inline-flex; min-height:3rem; align-items:center; border-radius:9999px; border:1px solid rgba(255,255,255,.3); padding:.75rem 1.5rem; font-size:.875rem; font-weight:600; color:#fff; transition:.2s;}
+  .btn-light:hover{background:#fff; color:var(--green);}
+  .field{width:100%; border-radius:1rem; border:1px solid var(--border); background:var(--cream); padding:1rem 1.25rem; font-size:1rem; outline:none; transition:.2s;}
+  .field::placeholder{color:var(--muted-3);}
+  .field:focus{border-color:var(--gold-text); box-shadow:0 0 0 3px rgba(212,175,55,.2);}
+  .info-link{display:flex; align-items:flex-start; gap:1rem; border-top:1px solid var(--border-2); padding:1.5rem 0; font-size:1.125rem; line-height:2rem; transition:.2s; text-decoration:none; color:inherit;}
+  .info-link:hover{color:var(--gold-text);}
+  .topo{background-image:radial-gradient(circle at 20% 30%, transparent 0, transparent 22%, rgba(26,58,50,.08) 22.4%, transparent 22.8%), radial-gradient(circle at 70% 80%, transparent 0, transparent 30%, rgba(26,58,50,.07) 30.4%, transparent 30.8%); background-size:420px 420px;}
+  .step-dot{display:grid; place-items:center; height:2.25rem; width:2.25rem; border-radius:9999px; font-size:.875rem; background:var(--panel); color:var(--green);}
+  .step-dot.active{background:var(--green); color:#fff;}
+  .wizard-option{border-radius:1rem; border:1px solid var(--border-3); padding:1rem; text-align:left; transition:.2s; cursor:pointer; background:#fff; width:100%;}
+  .wizard-option:hover{border-color:var(--green);}
+  .wizard-option.selected{border-color:var(--gold); background:#FFF9E2;}
+  .wizard-step{display:none;}
+  .wizard-step.active{display:block;}
+  .spinner{width:2.5rem; height:2.5rem; border-radius:9999px; border:4px solid var(--panel); border-top-color:var(--green); animation:spin 1s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .nav-link{font-size:.875rem; color:rgba(255,255,255,.8); text-decoration:none; transition:.2s;}
+  .nav-link:hover{color:var(--gold-light);}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} *{animation-duration:.001ms !important; transition-duration:.001ms !important;} }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50" style="background:rgba(26,58,50,.97); backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,255,255,.1);">
+  <div class="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 md:px-10 xl:px-[7vw]">
+    <a href="#home" class="flex items-center gap-3 text-white">
+      <span class="grid h-10 w-10 place-items-center rounded-full" style="background:var(--gold); color:var(--green);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l1 5a5 5 0 0 1-1.5 3.6L15 12v8a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-8l-.5-1.4A5 5 0 0 1 7 7z"/></svg>
+      </span>
+      <span><b class="block font-heading text-lg leading-none">Aravind</b><small style="letter-spacing:.24em; color:rgba(255,255,255,.6);">DAIRY FARM</small></span>
+    </a>
+    <nav class="hidden items-center gap-7 lg:flex">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">Our Story</a>
+      <a class="nav-link" href="#products">Products</a>
+      <a class="nav-link" href="#gallery">Gallery</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <div class="flex items-center gap-5">
+      <div class="hidden xl:flex items-center gap-2 text-xs" style="color:rgba(255,255,255,.8);">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span>Next delivery starts in <b id="deliveryTimer" class="text-white">--h --m</b></span>
+      </div>
+      <button id="menuToggle" aria-label="Toggle navigation" class="lg:hidden text-white">
+        <svg id="menuIconOpen" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        <svg id="menuIconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav id="mobileMenu" class="lg:hidden px-5 py-2" style="display:none; border-top:1px solid rgba(255,255,255,.1);">
+    <a class="block py-3 text-lg" style="color:rgba(255,255,255,.9);" href="#home">Home</a>
+    <a class="block py-3 text-lg" style="color:rgba(255,255,255,.9);" href="#about">Our Story</a>
+    <a class="block py-3 text-lg" style="color:rgba(255,255,255,.9);" href="#products">Products</a>
+    <a class="block py-3 text-lg" style="color:rgba(255,255,255,.9);" href="#gallery">Gallery</a>
+    <a class="block py-3 text-lg" style="color:rgba(255,255,255,.9);" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="relative overflow-hidden" style="min-height:calc(100vh - 5rem); background:#132F28; color:#fff;">
+    <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/ca89ee903_generated_b9d79bc1.png" alt="Aravind Dairy Farm at sunrise" class="absolute inset-0 h-full w-full object-cover" style="opacity:.65;">
+    <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(16,43,37,.95), rgba(16,43,37,.5) 55%, transparent);"></div>
+    <div class="relative mx-auto flex max-w-[1440px] items-center px-5 py-20 md:px-10 xl:px-[10vw]" style="min-height:calc(100vh - 5rem);">
+      <div class="max-w-4xl">
+        <p class="eyebrow" style="color:var(--gold-light);">From Kamalapuram, with care</p>
+        <h1 class="mt-6 font-heading" style="font-size:3.25rem; line-height:.9;">Freshness, direct from our farm to your home.</h1>
+        <p class="mt-7 max-w-xl text-lg" style="line-height:2rem; color:rgba(255,255,255,.75);">Pure dairy raised with patience, handled with precision, and delivered while the morning is still young.</p>
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="#products" class="btn-gold">Explore our dairy
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#subscribe" class="btn-light">Schedule your morning</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section class="section-pad">
+    <div class="grid gap-14 lg:grid-cols-[.8fr_1.2fr]">
+      <div>
+        <p class="eyebrow">The Aravind promise</p>
+        <h2 class="section-title">Honest dairy begins with a healthy farm.</h2>
+      </div>
+      <div class="grid gap-8 sm:grid-cols-2">
+        <div class="pt-5" style="border-top:1px solid var(--border-4);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-text-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          <h3 class="mt-5 font-heading" style="font-size:1.5rem;">Farm fresh</h3>
+          <p class="mt-2" style="color:var(--muted);">Collected and chilled with care.</p>
+        </div>
+        <div class="pt-5" style="border-top:1px solid var(--border-4);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-text-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3 class="mt-5 font-heading" style="font-size:1.5rem;">Hygienic</h3>
+          <p class="mt-2" style="color:var(--muted);">Clean handling at every step.</p>
+        </div>
+        <div class="pt-5" style="border-top:1px solid var(--border-4);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-text-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5 5 0 0 0-7.1 0L12 6.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 20.3l8.8-8.6a5 5 0 0 0 0-7.1z"/></svg>
+          <h3 class="mt-5 font-heading" style="font-size:1.5rem;">Responsibly raised</h3>
+          <p class="mt-2" style="color:var(--muted);">Patient, attentive animal care.</p>
+        </div>
+        <div class="pt-5" style="border-top:1px solid var(--border-4);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold-text-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.3L18 9l-4.1 1.7L12 15l-1.9-4.3L6 9l4.1-1.7z"/><path d="M19 15l.8 1.9L22 18l-2.2.9L19 21l-.8-2.1L16 18l2.2-1.1z"/></svg>
+          <h3 class="mt-5 font-heading" style="font-size:1.5rem;">Quality assured</h3>
+          <p class="mt-2" style="color:var(--muted);">Made fresh in thoughtful batches.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLLOW THE MILK -->
+  <section class="section-pad">
+    <div class="mb-14 max-w-2xl">
+      <p class="eyebrow">Follow the milk</p>
+      <h2 class="section-title">From our pasture to your doorstep.</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-3">
+      <figure class="md:mt-10">
+        <div class="overflow-hidden" style="border-radius:42% 12% 38% 12%;">
+          <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/4943952f0_generated_4d884ad4.png" alt="Buffaloes grazing at dawn" class="aspect-[3/4] w-full object-cover">
+        </div>
+        <figcaption class="mt-4 font-heading" style="font-size:1.5rem;">Raised with care</figcaption>
+        <p class="mt-1 text-sm" style="color:var(--muted);">Healthy animals, calm mornings.</p>
+      </figure>
+      <figure>
+        <div class="overflow-hidden" style="border-radius:12% 42% 12% 38%;">
+          <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/1506512e8_generated_c6318d26.png" alt="Clean collection and chilling" class="aspect-[3/4] w-full object-cover">
+        </div>
+        <figcaption class="mt-4 font-heading" style="font-size:1.5rem;">Handled clean</figcaption>
+        <p class="mt-1 text-sm" style="color:var(--muted);">Collected and chilled with precision.</p>
+      </figure>
+      <figure class="md:mt-20">
+        <div class="overflow-hidden" style="border-radius:38% 12% 42% 12%;">
+          <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/c962d2a6a_generated_d008a0d0.png" alt="Early morning delivery" class="aspect-[3/4] w-full object-cover">
+        </div>
+        <figcaption class="mt-4 font-heading" style="font-size:1.5rem;">Delivered fresh</figcaption>
+        <p class="mt-1 text-sm" style="color:var(--muted);">At your door while the morning is young.</p>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section id="subscribe" class="section-pad" style="background:var(--panel);">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="eyebrow">Morning, made effortless</p>
+        <h2 class="section-title">Your dairy ritual, delivered on your rhythm.</h2>
+        <p class="mt-6 max-w-xl text-lg" style="line-height:2rem; color:var(--muted);">Choose your essentials, set a frequency, and confirm directly with our farm on WhatsApp.</p>
+      </div>
+
+      <section class="rounded-[2rem] bg-white p-6 md:p-10" style="box-shadow:0 30px 80px rgba(26,58,50,.12);">
+        <div class="mb-8 flex items-center gap-3">
+          <span class="step-dot active" data-dot="1">1</span>
+          <span class="step-dot" data-dot="2">2</span>
+          <span class="step-dot" data-dot="3">3</span>
+        </div>
+
+        <div class="wizard-step active" data-step="1">
+          <h3 class="font-heading" style="font-size:1.875rem;">Choose your essentials</h3>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2">
+            <button type="button" class="wizard-option" data-item="Fresh Milk">Fresh Milk</button>
+            <button type="button" class="wizard-option" data-item="Set Curd">Set Curd</button>
+            <button type="button" class="wizard-option" data-item="Farm Butter">Farm Butter</button>
+            <button type="button" class="wizard-option" data-item="Fresh Paneer">Fresh Paneer</button>
+          </div>
+        </div>
+
+        <div class="wizard-step" data-step="2">
+          <h3 class="font-heading" style="font-size:1.875rem;">Set your rhythm</h3>
+          <div class="mt-6 grid gap-3">
+            <button type="button" class="wizard-option selected" data-freq="Daily">Daily</button>
+            <button type="button" class="wizard-option" data-freq="Alternate Days">Alternate Days</button>
+            <button type="button" class="wizard-option" data-freq="Weekends">Weekends</button>
+          </div>
+        </div>
+
+        <div class="wizard-step" data-step="3">
+          <h3 class="font-heading" style="font-size:1.875rem;">Where should we deliver?</h3>
+          <div class="mt-6 space-y-4">
+            <input id="wizName" class="field" placeholder="Your name" aria-label="Your name">
+            <textarea id="wizAddress" class="field" style="min-height:7rem;" placeholder="Delivery address" aria-label="Delivery address"></textarea>
+          </div>
+        </div>
+
+        <div class="mt-8 flex justify-between">
+          <button type="button" id="wizBack" class="btn-secondary" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Back
+          </button>
+          <button type="button" id="wizNext" class="btn-primary" disabled>Continue
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <button type="button" id="wizSend" class="btn-primary" style="display:none;" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Verify on WhatsApp
+          </button>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="section-pad text-center">
+    <p class="eyebrow">From our neighbours</p>
+    <blockquote class="mx-auto mt-8 max-w-4xl font-heading" style="font-size:2.25rem; line-height:1.2;">
+      "The milk tastes wonderfully fresh, and the early delivery has become part of our family's morning."
+    </blockquote>
+    <p class="mt-6 text-sm" style="text-transform:uppercase; letter-spacing:.2em; color:var(--gold-text-2);">A Kamalapuram household</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="relative overflow-hidden section-pad" style="background:var(--panel);">
+      <div class="topo absolute inset-0" style="opacity:.3;"></div>
+      <div class="relative max-w-4xl">
+        <p class="eyebrow">Our story</p>
+        <h1 class="mt-5 font-heading" style="font-size:3rem; line-height:.96;">Rooted in Kadapa. Raised with integrity.</h1>
+        <p class="mt-7 max-w-2xl text-lg" style="line-height:2rem; color:var(--muted-2);">Aravind Dairy Farm brings the enduring values of careful animal husbandry, clean handling, and neighbourly service into every product we make.</p>
+      </div>
+    </div>
+
+    <div class="section-pad">
+      <div class="grid gap-14 lg:grid-cols-2 lg:items-center">
+        <div class="overflow-hidden" style="border-radius:42% 12% 38% 12%;">
+          <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/1f7757019_generated_ebaaa88f.png" alt="Aravind Dairy Farm heritage" class="aspect-[4/3] w-full object-cover">
+        </div>
+        <div>
+          <p class="eyebrow">A local legacy</p>
+          <h2 class="section-title">Dairy made at the pace of nature.</h2>
+          <div class="mt-7 space-y-5 text-lg" style="line-height:2rem; color:var(--muted);">
+            <p>From Padamati Veedi in Kamalapuram, we serve families who want to know where their food comes from and how it was cared for.</p>
+            <p>Our work starts long before the milk reaches a bottle—with balanced care, a calm environment, clean equipment, and close attention to freshness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-pad" style="background:var(--green); color:#fff;">
+      <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
+        <div>
+          <p class="eyebrow" style="color:var(--gold-light);">Animal wellbeing</p>
+          <h2 class="section-title" style="color:#fff;">Good care is the first ingredient.</h2>
+          <p class="mt-6 text-lg" style="line-height:2rem; color:rgba(255,255,255,.65);">Healthy animals, attentive routines, and a clean farm create dairy we are proud to share.</p>
+        </div>
+        <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/4943952f0_generated_4d884ad4.png" alt="Buffaloes cared for at the farm" class="aspect-[3/2] w-full object-cover" style="border-radius:12% 40% 12% 40%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="relative overflow-hidden section-pad" style="background:var(--panel);">
+      <div class="topo absolute inset-0" style="opacity:.3;"></div>
+      <div class="relative max-w-4xl">
+        <p class="eyebrow">Our dairy</p>
+        <h1 class="mt-5 font-heading" style="font-size:3rem; line-height:.96;">Everyday essentials, made exceptional.</h1>
+        <p class="mt-7 max-w-2xl text-lg" style="line-height:2rem; color:var(--muted-2);">Fresh milk and thoughtfully crafted dairy products made for the tables of Kamalapuram and Kadapa.</p>
+      </div>
+    </div>
+
+    <div class="section-pad">
+      <div class="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article class="group">
+          <div class="overflow-hidden" style="border-radius:48% 48% 18px 18px; background:var(--panel);">
+            <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/f1f4acbc1_generated_cacdd04a.png" alt="Fresh Milk from Aravind Dairy Farm" class="aspect-[4/5] w-full object-cover">
+          </div>
+          <div class="px-2 pt-5 flex items-start justify-between gap-4">
+            <div><h3 class="font-heading" style="font-size:1.875rem;">Fresh Milk</h3><p class="mt-2 text-sm" style="line-height:1.5rem; color:var(--muted);">Clean, full-bodied and delivered fresh.</p></div>
+            <a href="https://wa.me/919392780990?text=Namaste!%20I%20would%20like%20to%20schedule%20Fresh%20Milk%20from%20Aravind%20Dairy%20Farm." target="_blank" rel="noreferrer" aria-label="Schedule Fresh Milk" class="grid h-11 w-11 shrink-0 place-items-center rounded-full" style="background:var(--gold);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="overflow-hidden" style="border-radius:48% 48% 18px 18px; background:var(--panel);">
+            <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/4b9c96283_generated_48f759cd.png" alt="Set Curd from Aravind Dairy Farm" class="aspect-[4/5] w-full object-cover">
+          </div>
+          <div class="px-2 pt-5 flex items-start justify-between gap-4">
+            <div><h3 class="font-heading" style="font-size:1.875rem;">Set Curd</h3><p class="mt-2 text-sm" style="line-height:1.5rem; color:var(--muted);">Thick, gently cultured and naturally satisfying.</p></div>
+            <a href="https://wa.me/919392780990?text=Namaste!%20I%20would%20like%20to%20schedule%20Set%20Curd%20from%20Aravind%20Dairy%20Farm." target="_blank" rel="noreferrer" aria-label="Schedule Set Curd" class="grid h-11 w-11 shrink-0 place-items-center rounded-full" style="background:var(--gold);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="overflow-hidden" style="border-radius:48% 48% 18px 18px; background:var(--panel);">
+            <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/ba849ea3d_generated_39eaa63b.png" alt="Golden Ghee from Aravind Dairy Farm" class="aspect-[4/5] w-full object-cover">
+          </div>
+          <div class="px-2 pt-5 flex items-start justify-between gap-4">
+            <div><h3 class="font-heading" style="font-size:1.875rem;">Golden Ghee</h3><p class="mt-2 text-sm" style="line-height:1.5rem; color:var(--muted);">Slow-crafted for deep aroma and golden clarity.</p></div>
+            <a href="https://wa.me/919392780990?text=Namaste!%20I%20would%20like%20to%20schedule%20Golden%20Ghee%20from%20Aravind%20Dairy%20Farm." target="_blank" rel="noreferrer" aria-label="Schedule Golden Ghee" class="grid h-11 w-11 shrink-0 place-items-center rounded-full" style="background:var(--gold);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="overflow-hidden" style="border-radius:48% 48% 18px 18px; background:var(--panel);">
+            <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/5ecfb1c02_generated_d9183c04.png" alt="Farm Butter from Aravind Dairy Farm" class="aspect-[4/5] w-full object-cover">
+          </div>
+          <div class="px-2 pt-5 flex items-start justify-between gap-4">
+            <div><h3 class="font-heading" style="font-size:1.875rem;">Farm Butter</h3><p class="mt-2 text-sm" style="line-height:1.5rem; color:var(--muted);">Freshly churned with a soft, creamy finish.</p></div>
+            <a href="https://wa.me/919392780990?text=Namaste!%20I%20would%20like%20to%20schedule%20Farm%20Butter%20from%20Aravind%20Dairy%20Farm." target="_blank" rel="noreferrer" aria-label="Schedule Farm Butter" class="grid h-11 w-11 shrink-0 place-items-center rounded-full" style="background:var(--gold);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="overflow-hidden" style="border-radius:48% 48% 18px 18px; background:var(--panel);">
+            <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/32b760909_generated_7f351083.png" alt="Fresh Paneer from Aravind Dairy Farm" class="aspect-[4/5] w-full object-cover">
+          </div>
+          <div class="px-2 pt-5 flex items-start justify-between gap-4">
+            <div><h3 class="font-heading" style="font-size:1.875rem;">Fresh Paneer</h3><p class="mt-2 text-sm" style="line-height:1.5rem; color:var(--muted);">Soft, delicate and made in small batches.</p></div>
+            <a href="https://wa.me/919392780990?text=Namaste!%20I%20would%20like%20to%20schedule%20Fresh%20Paneer%20from%20Aravind%20Dairy%20Farm." target="_blank" rel="noreferrer" aria-label="Schedule Fresh Paneer" class="grid h-11 w-11 shrink-0 place-items-center rounded-full" style="background:var(--gold);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="group">
+          <div class="overflow-hidden" style="border-radius:48% 48% 18px 18px; background:var(--panel);">
+            <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/636d68200_generated_336cccf7.png" alt="Artisan Cheese from Aravind Dairy Farm" class="aspect-[4/5] w-full object-cover">
+          </div>
+          <div class="px-2 pt-5 flex items-start justify-between gap-4">
+            <div><h3 class="font-heading" style="font-size:1.875rem;">Artisan Cheese</h3><p class="mt-2 text-sm" style="line-height:1.5rem; color:var(--muted);">Mild farmhouse cheese with a creamy bite.</p></div>
+            <a href="https://wa.me/919392780990?text=Namaste!%20I%20would%20like%20to%20schedule%20Artisan%20Cheese%20from%20Aravind%20Dairy%20Farm." target="_blank" rel="noreferrer" aria-label="Schedule Artisan Cheese" class="grid h-11 w-11 shrink-0 place-items-center rounded-full" style="background:var(--gold);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+      <div class="mt-14 text-center">
+        <a href="#subscribe" class="btn-primary">Set up a subscription
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="relative overflow-hidden section-pad" style="background:var(--panel);">
+      <div class="topo absolute inset-0" style="opacity:.3;"></div>
+      <div class="relative max-w-4xl">
+        <p class="eyebrow">A day at Aravind</p>
+        <h1 class="mt-5 font-heading" style="font-size:3rem; line-height:.96;">See the care behind every morning.</h1>
+        <p class="mt-7 max-w-2xl text-lg" style="line-height:2rem; color:var(--muted-2);">A transparent look at the animals, people, cleanliness, and early routines that bring fresh dairy to your door.</p>
+      </div>
+    </div>
+
+    <div class="section-pad">
+      <div class="space-y-20">
+        <article class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/4943952f0_generated_4d884ad4.png" alt="Pasture at dawn" class="aspect-[3/2] w-full object-cover" style="border-radius:3rem 1rem 3rem 1rem;">
+          <div class="lg:px-12">
+            <p class="text-sm" style="font-family:ui-monospace,monospace; color:var(--gold-text);">05:00</p>
+            <h2 class="mt-4 font-heading" style="font-size:2.25rem;">Pasture at dawn</h2>
+            <p class="mt-5 text-lg" style="line-height:2rem; color:var(--muted);">Freshness is not one moment. It is a chain of thoughtful decisions, repeated carefully every day.</p>
+          </div>
+        </article>
+        <article class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <div class="lg:px-12 lg:order-2">
+            <p class="text-sm" style="font-family:ui-monospace,monospace; color:var(--gold-text);">05:30</p>
+            <h2 class="mt-4 font-heading" style="font-size:2.25rem;">Clean collection &amp; chilling</h2>
+            <p class="mt-5 text-lg" style="line-height:2rem; color:var(--muted);">Freshness is not one moment. It is a chain of thoughtful decisions, repeated carefully every day.</p>
+          </div>
+          <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/1506512e8_generated_c6318d26.png" alt="Clean collection and chilling" class="aspect-[3/2] w-full object-cover lg:order-1" style="border-radius:3rem 1rem 3rem 1rem;">
+        </article>
+        <article class="grid gap-8 lg:grid-cols-2 lg:items-center">
+          <img src="https://media.base44.com/images/public/6a6d6dfb6fe77f68b08ec22c/c962d2a6a_generated_d008a0d0.png" alt="Fresh delivery begins" class="aspect-[3/2] w-full object-cover" style="border-radius:3rem 1rem 3rem 1rem;">
+          <div class="lg:px-12">
+            <p class="text-sm" style="font-family:ui-monospace,monospace; color:var(--gold-text);">06:30</p>
+            <h2 class="mt-4 font-heading" style="font-size:2.25rem;">Fresh delivery begins</h2>
+            <p class="mt-5 text-lg" style="line-height:2rem; color:var(--muted);">Freshness is not one moment. It is a chain of thoughtful decisions, repeated carefully every day.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="relative overflow-hidden section-pad" style="background:var(--panel);">
+      <div class="topo absolute inset-0" style="opacity:.3;"></div>
+      <div class="relative max-w-4xl">
+        <p class="eyebrow">Contact us</p>
+        <h1 class="mt-5 font-heading" style="font-size:3rem; line-height:.96;">The shortest route to fresh dairy.</h1>
+        <p class="mt-7 max-w-2xl text-lg" style="line-height:2rem; color:var(--muted-2);">Visit us in Kamalapuram, call the farm, or send your enquiry directly on WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="section-pad">
+      <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="space-y-8">
+          <div>
+            <p class="eyebrow">Find us</p>
+            <h2 class="mt-4 font-heading" style="font-size:2.25rem;">Come closer to the source.</h2>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Padamati+Veedi+Kamalapuram+Kadapa+516289" target="_blank" rel="noreferrer" class="info-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Padamati Veedi, Kamalapuram,<br>Kadapa – 516289
+          </a>
+          <a href="tel:+919392780990" class="info-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            9392780990
+          </a>
+          <a href="https://wa.me/919392780990" target="_blank" rel="noreferrer" class="info-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <form id="contactForm" class="rounded-[2rem] bg-white p-6 md:p-10" style="box-shadow:0 30px 80px rgba(26,58,50,.1);">
+          <p class="eyebrow">Send an enquiry</p>
+          <h2 class="mt-4 font-heading" style="font-size:2.25rem;">Talk directly to the farm.</h2>
+          <div class="mt-8 space-y-4">
+            <input required id="contactName" class="field" placeholder="Your name" aria-label="Your name">
+            <input required id="contactPhone" class="field" placeholder="Phone number" aria-label="Phone number" type="tel">
+            <textarea required id="contactMessage" class="field" style="min-height:9rem;" placeholder="How can we help?" aria-label="Your message"></textarea>
+          </div>
+          <button class="btn-primary mt-6 w-full justify-center" type="submit">Send on WhatsApp
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div style="height:460px; background:var(--panel);">
+      <iframe title="Aravind Dairy Farm location" src="https://www.google.com/maps?q=Padamati%20Veedi%20Kamalapuram%20Kadapa%20516289&output=embed" class="h-full w-full" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:var(--green-dark); color:#fff;">
+  <div class="mx-auto grid max-w-[1440px] gap-10 px-5 py-14 md:grid-cols-3 md:px-10 xl:px-[7vw]">
+    <div>
+      <p class="font-heading" style="font-size:1.875rem;">Aravind Dairy Farm</p>
+      <p class="mt-3 max-w-sm" style="color:rgba(255,255,255,.6);">Pure dairy, thoughtfully raised and delivered fresh from our Kamalapuram farm.</p>
+    </div>
+    <div>
+      <p class="text-xs" style="text-transform:uppercase; letter-spacing:.2em; color:var(--gold);">Visit the farm</p>
+      <p class="mt-4 flex gap-3" style="color:rgba(255,255,255,.75);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Padamati Veedi, Kamalapuram,<br>Kadapa – 516289
+      </p>
+    </div>
+    <div>
+      <p class="text-xs" style="text-transform:uppercase; letter-spacing:.2em; color:var(--gold);">Talk to us</p>
+      <a href="tel:+919392780990" class="mt-4 flex items-center gap-3" style="font-size:1.25rem; color:#fff; text-decoration:none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        9392780990
+      </a>
+      <div class="mt-5 flex gap-4 text-sm" style="color:rgba(255,255,255,.55);">
+        <a href="#about" style="color:inherit; text-decoration:none;">Our Story</a>
+        <a href="#products" style="color:inherit; text-decoration:none;">Products</a>
+        <a href="#contact" style="color:inherit; text-decoration:none;">Contact</a>
+      </div>
+      <div class="mt-6">
+        <p class="text-xs" style="text-transform:uppercase; letter-spacing:.2em; color:var(--gold);">Follow us</p>
+        <div class="mt-3 flex items-center gap-3">
+          <a href="https://wa.me/919392780990" target="_blank" rel="noreferrer" aria-label="Chat with us on WhatsApp"
+             class="grid h-10 w-10 place-items-center rounded-full transition" style="background:rgba(255,255,255,.08); color:#fff;"
+             onmouseover="this.style.background='var(--gold)'; this.style.color='var(--green)';"
+             onmouseout="this.style.background='rgba(255,255,255,.08)'; this.style.color='#fff';">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px-5 py-5 text-center text-xs" style="border-top:1px solid rgba(255,255,255,.1); color:rgba(255,255,255,.4);">
+    © <span id="year"></span> Aravind Dairy Farm. Freshness with integrity.
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/919392780990?text=Namaste%20Aravind%20Dairy%20Farm!%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noreferrer" aria-label="Order on WhatsApp"
+   class="fixed z-50 flex items-center gap-2 rounded-full" style="bottom:1.25rem; right:1.25rem; background:var(--green); color:#fff; padding:.75rem 1rem; box-shadow:0 20px 40px rgba(0,0,0,.25); text-decoration:none; transition:.2s;"
+   onmouseover="this.style.transform='translateY(-4px)'; this.style.background='var(--green-hover)';"
+   onmouseout="this.style.transform='translateY(0)'; this.style.background='var(--green)';">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  <span class="hidden text-sm font-semibold sm:block">Direct to Farm</span>
+</a>
+
+<script>
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconOpen = document.getElementById('menuIconOpen');
+  const iconClose = document.getElementById('menuIconClose');
+  let menuOpen = false;
+  menuToggle.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    mobileMenu.style.display = menuOpen ? 'block' : 'none';
+    iconOpen.style.display = menuOpen ? 'none' : 'block';
+    iconClose.style.display = menuOpen ? 'block' : 'none';
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menuOpen = false;
+    mobileMenu.style.display = 'none';
+    iconOpen.style.display = 'block';
+    iconClose.style.display = 'none';
+  }));
+
+  // Delivery timer — next delivery window starts 5:00 AM IST
+  function getRemaining() {
+    const now = new Date();
+    const istNow = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
+    const next = new Date(istNow);
+    next.setHours(5, 0, 0, 0);
+    if (next <= istNow) next.setDate(next.getDate() + 1);
+    const seconds = Math.floor((next - istNow) / 1000);
+    const h = String(Math.floor(seconds / 3600)).padStart(2, '0');
+    const m = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+    return h + 'h ' + m + 'm';
+  }
+  const timerEl = document.getElementById('deliveryTimer');
+  timerEl.textContent = getRemaining();
+  setInterval(() => { timerEl.textContent = getRemaining(); }, 60000);
+
+  // Subscription wizard
+  (function () {
+    let step = 1;
+    let items = [];
+    let frequency = 'Daily';
+    const dots = document.querySelectorAll('.step-dot');
+    const steps = document.querySelectorAll('.wizard-step');
+    const backBtn = document.getElementById('wizBack');
+    const nextBtn = document.getElementById('wizNext');
+    const sendBtn = document.getElementById('wizSend');
+
+    document.querySelectorAll('[data-item]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.dataset.item;
+        if (items.includes(item)) {
+          items = items.filter(i => i !== item);
+          btn.classList.remove('selected');
+        } else {
+          items.push(item);
+          btn.classList.add('selected');
+        }
+        updateNextState();
+      });
+    });
+
+    document.querySelectorAll('[data-freq]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        frequency = btn.dataset.freq;
+        document.querySelectorAll('[data-freq]').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+      });
+    });
+
+    function updateNextState() {
+      if (step === 1) nextBtn.disabled = items.length === 0;
+      else nextBtn.disabled = false;
+    }
+
+    function render() {
+      steps.forEach(s => s.classList.toggle('active', Number(s.dataset.step) === step));
+      dots.forEach(d => d.classList.toggle('active', Number(d.dataset.dot) <= step));
+      backBtn.disabled = step === 1;
+      nextBtn.style.display = step < 3 ? 'inline-flex' : 'none';
+      sendBtn.style.display = step === 3 ? 'inline-flex' : 'none';
+      updateNextState();
+      checkSendState();
+    }
+
+    function checkSendState() {
+      const name = document.getElementById('wizName').value.trim();
+      const address = document.getElementById('wizAddress').value.trim();
+      sendBtn.disabled = !name || !address;
+    }
+    document.getElementById('wizName').addEventListener('input', checkSendState);
+    document.getElementById('wizAddress').addEventListener('input', checkSendState);
+
+    backBtn.addEventListener('click', () => { if (step > 1) { step--; render(); } });
+    nextBtn.addEventListener('click', () => { if (step < 3) { step++; render(); } });
+    sendBtn.addEventListener('click', () => {
+      const name = document.getElementById('wizName').value.trim();
+      const address = document.getElementById('wizAddress').value.trim();
+      const text = 'Namaste! I\u2019m ' + name + '. I\u2019d like ' + items.join(', ') + ' delivered ' + frequency.toLowerCase() + ' to ' + address + '. Please confirm my subscription.';
+      window.open('https://wa.me/919392780990?text=' + encodeURIComponent(text), '_blank');
+    });
+
+    render();
+  })();
+
+  // Contact form -> WhatsApp
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('contactName').value.trim();
+    const phone = document.getElementById('contactPhone').value.trim();
+    const message = document.getElementById('contactMessage').value.trim();
+    const text = 'Namaste! I\u2019m ' + name + ' (' + phone + '). ' + message;
+    window.open('https://wa.me/919392780990?text=' + encodeURIComponent(text), '_blank');
+  });
+</script>
+
+</body>
+</html>
